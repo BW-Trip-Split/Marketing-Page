@@ -11,18 +11,46 @@ main{
     
     .infoBox {
       display: flex;
+      align-items: center;
       padding: 20px;
       
       div {
         width: 50%;
+        padding: 20px;
         
         h3 {
           font-size: 3rem;
           padding-bottom: 20px;
         }//close of h3
-
+        
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
+        }
+        
+        .button {
+          border-radius: 15px;
+          background: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15px;
+          padding: 0;
+
+          &:hover {
+            background: #44ffee;
+          }
+
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+
+            &:hover {
+              color: black;
+            }
+          }
         }
       }//close of div
     }//close of .infobox
