@@ -86,7 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -129,10 +128,20 @@ table {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 img {
   max-width: 100%;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  img {
+    align-items: center;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 header {
   display: flex;
@@ -144,30 +153,45 @@ header {
   background-attachment: fixed;
   background-size: cover;
 }
-header .logo {
+@media (max-width: 500px) {
+  header {
+    height: 798px;
+  }
+}
+header .mainNav {
   width: 100%;
-  text-align: start;
 }
-header .logo a {
-  display: inline-block;
-  margin: 10px 0 20px 10px;
+header .mainNav nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
 }
-header .logo a img {
-  width: 100px;
-  border-radius: 50px;
+header .mainNav nav ul li {
+  margin: 30px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+header .mainNav nav ul li:last-child {
+  margin-right: 90px;
 }
 header div {
-  font-family: 'Courier New', Courier, monospace;
   width: 50%;
-  text-align: center;
+}
+@media (max-width: 500px) {
+  header div {
+    width: 80%;
+  }
 }
 header div h1 {
-  font-size: 8rem;
-  margin-bottom: 30px;
+  font-size: 9rem;
+  margin-bottom: 50px;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-weight: 800;
 }
 header div h2 {
-  font-size: 2rem;
-  margin-bottom: 80px;
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 header .appStore {
   display: flex;
@@ -176,10 +200,22 @@ header .appStore {
   font-size: 2rem;
   padding: 100px 0;
 }
+@media (max-width: 500px) {
+  header .appStore {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
 header .appStore div {
   background: black;
   border-radius: 15px;
   margin: 0 30px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header .appStore div {
+    margin: 20px;
+  }
 }
 header .appStore div a {
   text-decoration: none;
@@ -188,6 +224,9 @@ header .appStore div a {
 }
 header .appStore div a h3 {
   color: white;
+}
+header .downArrow {
+  text-align: center;
 }
 header .downArrow .fas {
   font-size: 90px;
@@ -198,14 +237,38 @@ main .mainSection {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  main .mainSection {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  main .mainSection #reverse {
+    flex-direction: column;
+  }
+}
 main .mainSection .infoBox {
   display: flex;
   align-items: center;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  main .mainSection .infoBox {
+    flex-direction: column-reverse;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 main .mainSection .infoBox div {
   width: 50%;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  main .mainSection .infoBox div {
+    width: 80%;
+    padding: 0 0 10px 0;
+    margin: 0 auto;
+  }
 }
 main .mainSection .infoBox div h3 {
   font-size: 3rem;
