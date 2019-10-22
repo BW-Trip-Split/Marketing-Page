@@ -19,8 +19,7 @@ header {
     
     nav {
       ul {
-        display: flex;
-        justify-content: flex-end;
+        .flex(flex-end);
         margin-bottom: 50px;
         
         li {
@@ -40,7 +39,7 @@ header {
   div {
     width: 50%;
     
-    @media @phone {
+    @media @tablet {
       width: 80%;
     }
     
@@ -58,8 +57,7 @@ header {
   }//close of div
   
   .appStore {
-    display: flex;
-    justify-content: space-evenly;
+    .flex(space-evenly);
     align-items: center;
     font-size: 2rem;
     padding: 100px 0;
@@ -112,7 +110,7 @@ header {
   background-size: cover;
 
   @media @phone {
-    height: 798px;
+    height: 100px;
   }
   
   .mainNav {

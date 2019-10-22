@@ -1,7 +1,7 @@
 main {
   
   .aboutTitle {
-    .flex();
+    .flex(center);
     font-size: 6rem;
     padding: 20px 0;
   }//close of .aboutTitle
@@ -12,8 +12,16 @@ main {
     .aboutUs {
       width: 60%;
       margin: 0 auto 40px auto;
-      .flex();
+      .flex(center);
       flex-wrap: wrap;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @phone {
+        width: 90%
+      }
       
       .person {
         width: 45%;
@@ -21,6 +29,10 @@ main {
         margin: 20px;
         box-shadow: 10px 10px 8px #888888;
         border-radius: 15px;
+
+        @media @phone {
+          width: 100%;
+        }
         
         img {
           border-radius: 15px 15px 0 0;
@@ -44,6 +56,15 @@ main {
           h3 {
             font-size: 2rem;
             margin-bottom: 10px;
+          }
+
+          .social {
+            .flex(center);
+            justify-content: space-evenly;
+          }
+
+          i {
+            font-size: 48px;
           }
         }//close of div
         
