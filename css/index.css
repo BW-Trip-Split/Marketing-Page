@@ -167,14 +167,29 @@ header .mainNav nav ul {
   justify-content: flex-end;
   margin-bottom: 50px;
 }
+@media (max-width: 500px) {
+  header .mainNav nav ul {
+    justify-content: space-between;
+  }
+}
 header .mainNav nav ul li {
   margin: 30px;
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: 700;
 }
+@media (max-width: 500px) {
+  header .mainNav nav ul li {
+    font-size: 1.5rem;
+  }
+}
 header .mainNav nav ul li:last-child {
   margin-right: 90px;
+}
+@media (max-width: 500px) {
+  header .mainNav nav ul li:last-child {
+    margin-right: 30px;
+  }
 }
 header div {
   width: 50%;
@@ -255,14 +270,29 @@ header .downArrow .fas {
   justify-content: flex-end;
   margin-bottom: 50px;
 }
+@media (max-width: 500px) {
+  #pageHeader .mainNav nav ul {
+    justify-content: space-between;
+  }
+}
 #pageHeader .mainNav nav ul li {
   margin: 30px;
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: 700;
 }
+@media (max-width: 500px) {
+  #pageHeader .mainNav nav ul li {
+    font-size: 1.5rem;
+  }
+}
 #pageHeader .mainNav nav ul li:last-child {
   margin-right: 90px;
+}
+@media (max-width: 500px) {
+  #pageHeader .mainNav nav ul li:last-child {
+    margin-right: 30px;
+  }
 }
 main .mainSection {
   display: flex;
@@ -421,4 +451,109 @@ footer p {
 footer p a {
   text-decoration: none;
   color: black;
+}
+.contactUs {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 60px auto;
+}
+@media (max-width: 500px) {
+  .contactUs {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.contactUs div {
+  width: 45%;
+  margin: 10px auto;
+}
+@media (max-width: 500px) {
+  .contactUs div {
+    width: 80%;
+  }
+}
+.contactUs div .form-style-1 {
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.contactUs div .form-style-1 li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.contactUs div .form-style-1 label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+.contactUs div .form-style-1 input[type=text],
+.contactUs div .form-style-1 input[type=date],
+.contactUs div .form-style-1 input[type=datetime],
+.contactUs div .form-style-1 input[type=number],
+.contactUs div .form-style-1 input[type=search],
+.contactUs div .form-style-1 input[type=time],
+.contactUs div .form-style-1 input[type=url],
+.contactUs div .form-style-1 input[type=email],
+.contactUs div .form-style-1 textarea,
+.contactUs div .form-style-1 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #BEBEBE;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.contactUs div .form-style-1 input[type=text]:focus,
+.contactUs div .form-style-1 input[type=date]:focus,
+.contactUs div .form-style-1 input[type=datetime]:focus,
+.contactUs div .form-style-1 input[type=number]:focus,
+.contactUs div .form-style-1 input[type=search]:focus,
+.contactUs div .form-style-1 input[type=time]:focus,
+.contactUs div .form-style-1 input[type=url]:focus,
+.contactUs div .form-style-1 input[type=email]:focus,
+.contactUs div .form-style-1 textarea:focus,
+.contactUs div .form-style-1 select:focus {
+  -moz-box-shadow: 0 0 8px #88D5E9;
+  -webkit-box-shadow: 0 0 8px #88D5E9;
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+}
+.contactUs div .form-style-1 .field-divided {
+  width: 49%;
+}
+.contactUs div .form-style-1 .field-long {
+  width: 100%;
+}
+.contactUs div .form-style-1 .field-select {
+  width: 100%;
+}
+.contactUs div .form-style-1 .field-textarea {
+  height: 100px;
+}
+.contactUs div .form-style-1 input[type=submit],
+.contactUs div .form-style-1 input[type=button] {
+  background: #ff4455;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.contactUs div .form-style-1 input[type=submit]:hover,
+.contactUs div .form-style-1 input[type=button]:hover {
+  background: #ff9144;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.contactUs div .form-style-1 .required {
+  color: red;
 }

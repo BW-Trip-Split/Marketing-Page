@@ -8,6 +8,72 @@
   <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 <body>
-  
+  <header id="pageHeader">
+    <div class="mainNav">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a target="_blank" href="https://trip-split-bw.herokuapp.com/login">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="contactUs">
+      <div>
+        <img src="imgs/undraw_fill_forms_yltj.svg" alt="Fill Form">
+      </div>
+      <div>
+        <form>
+          <ul class="form-style-1">
+            <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+            <li>
+              <label>Email <span class="required">*</span></label>
+              <input type="email" name="field3" class="field-long" />
+            </li>
+            <li>
+              <label>Subject</label>
+              <select name="field4" class="field-select">
+                <option value="Advertise">Advertise</option>
+                <option value="Partnership">Partnership</option>
+                <option value="General Question">General</option>
+                <option value="Website technical problem">Login help</option>
+              </select>
+            </li>
+            <li>
+              <label>Your Message <span class="required">*</span></label>
+              <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+            </li>
+            <li>
+              <input type="submit" value="Submit" />
+            </li>
+          </ul>
+        </form>
+        <!-- <form>
+          <fieldset>
+            <legend>Contact Us</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input id="name" type="text" placeholder="What is your name?">
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input id="email" type="email" placeholder="What is your Email?">
+            </p>
+            <p>
+              <label for="help">How can we help you?</label>
+              <input id="help" type="text">
+            </p>
+          </fieldset>
+        </form> -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2019 <a href="index.html">Trip Split</a></p>
+    <p>Background by <a href="https://www.svgbackgrounds.com" target="_blank">SVG Backgrounds</a></p>
+  </footer>
 </body>
 </html>

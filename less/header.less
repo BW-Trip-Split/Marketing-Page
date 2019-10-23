@@ -21,15 +21,27 @@ header {
       ul {
         .flex(flex-end);
         margin-bottom: 50px;
+
+        @media @phone {
+          justify-content: space-between;
+        }
         
         li {
           margin: 30px;
           text-decoration: none;
           font-size: 2.5rem;
           font-weight: 700;
+
+          @media @phone {
+            font-size: 1.5rem;
+          }
           
           &:last-child {
             margin-right: 90px;
+
+            @media @phone {
+              margin-right: 30px;
+            }
           }//close of li last child
         }//close of li
       }//close of ul
@@ -121,15 +133,27 @@ header {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 50px;
+
+        @media @phone {
+          justify-content: space-between;
+        }
         
         li {
           margin: 30px;
           text-decoration: none;
           font-size: 2.5rem;
           font-weight: 700;
+
+          @media @phone {
+            font-size: 1.5rem;
+          }
           
           &:last-child {
             margin-right: 90px;
+
+            @media @phone {
+              margin-right: 30px;
+            }
           }//close of li last child
         }//close of li
       }//close of ul
